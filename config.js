@@ -30,9 +30,11 @@ System.config({
     "babel-runtime": "npm:babel-runtime@5.8.34",
     "bootstrap": "github:twbs/bootstrap@3.3.6",
     "core-js": "npm:core-js@1.2.6",
+    "css": "github:systemjs/plugin-css@0.1.20",
     "fetch": "github:github/fetch@0.10.1",
     "font-awesome": "npm:font-awesome@4.5.0",
     "kendo-ui": "/vendors",
+    "systemjs/plugin-css": "github:systemjs/plugin-css@0.1.20",
     "text": "github:systemjs/plugin-text@0.0.3",
     "github:aurelia-ui-toolkits/aurelia-kendoui-plugin@master": {
       "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1",
