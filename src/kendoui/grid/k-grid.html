@@ -1,0 +1,21 @@
+<template>
+    <require from="./basic-grid.css"></require>
+        <section>
+            <br>
+            <h3>Basic KendoUI Grid sample</h3>
+
+            <a href="https://github.com/aurelia-ui-toolkits/aurelia-kendoui-plugin/tree/master/sample/src/samples/grid">See KendoUI Bridge grid folder for more details</a>
+            <br>
+            <br>
+            <k-grid k-data-source.bind="datasource" k-pageable.bind="pageable" k-sortable.bind="true">
+                <au-col title="Contact Name" field="ContactName">
+                    <div class='customer-photo' style="background-image: url(http://demos.telerik.com/kendo-ui/content/web/Customers/${CustomerID}.jpg);"></div>
+                    <div class='customer-name'>${ContactName}</div>
+                </au-col>
+                <au-col title="Contact Name" field="ContactName"></au-col>
+                <au-col title="Contact Title" field="ContactTitle"></au-col>
+                <au-col title="Company Name" field="CompanyName"></au-col>
+                <au-col field="Country"></au-col>
+            </k-grid>
+        </section>
+</template>
