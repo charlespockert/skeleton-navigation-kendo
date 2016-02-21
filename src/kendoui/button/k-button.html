@@ -8,12 +8,12 @@
         <br>
         <br>
 
-        <button k-button="k-enable.bind: enabled; k-icon: ungroup" k-on-click.trigger="test()">Kendo UI Button</button>
+        <button k-button="k-icon: ungroup; k-widget.bind: button" k-on-click.delegate="test()">Kendo UI Button</button>
         <br>
         <br>
-        <button k-button click.delegate="disable()">Disable</button>
-        &nbsp;&nbsp
-        <button k-button click.delegate="enable()">Enable</button>
+        <button k-button click.delegate="button.enable(false)">Disable</button>
+        &nbsp;&nbsp;
+        <button k-button click.delegate="button.enable(true)">Enable</button>
 
     </section>
 </template>

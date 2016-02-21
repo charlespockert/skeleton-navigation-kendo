@@ -1,21 +1,21 @@
 <template>
     <require from="./basic-grid.css"></require>
-        <section>
-            <br>
-            <h3>Basic KendoUI Grid sample</h3>
+    <section>
+        <br>
+        <h3>Basic KendoUI Grid sample</h3>
 
-            <a href="https://github.com/aurelia-ui-toolkits/aurelia-kendoui-plugin/tree/master/sample/src/samples/grid">See KendoUI Bridge grid folder for more details</a>
-            <br>
-            <br>
-            <k-grid k-data-source.bind="datasource" k-pageable.bind="pageable" k-sortable.bind="true">
-                <k-col title="Contact Name" field="ContactName">
-                    <div class='customer-photo' style="background-image: url(http://demos.telerik.com/kendo-ui/content/web/Customers/${CustomerID}.jpg);"></div>
-                    <div class='customer-name'>${ContactName}</div>
-                </k-col>
-                <k-col title="Contact Name" field="ContactName"></k-col>
-                <k-col title="Contact Title" field="ContactTitle"></k-col>
-                <k-col title="Company Name" field="CompanyName"></k-col>
-                <k-col field="Country"></k-col>
-            </k-grid>
-        </section>
+        <a href="https://github.com/aurelia-ui-toolkits/aurelia-kendoui-plugin/tree/master/sample/src/samples/grid">See KendoUI Bridge grid folder for more details</a>
+        <br>
+        <br>
+        <k-grid k-data-source.bind="datasource" k-pageable.bind="pageable" k-sortable.bind="true">
+        <k-col title="Contact Name" field="ContactName">
+        <div class='customer-photo' style="background-image: url(http://demos.telerik.com/kendo-ui/content/web/Customers/${CustomerID}.jpg);"></div>
+        <div class='customer-name'>${ContactName}</div>
+        </k-col>
+        <k-col title="Contact Name" field="ContactName"></k-col>
+        <k-col title="Contact Title" field="ContactTitle"></k-col>
+        <k-col title="Company Name" field="CompanyName"></k-col>
+        <k-col field="Country"></k-col>
+        </k-grid>
+    </section>
 </template>
